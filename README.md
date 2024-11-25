@@ -1,2 +1,2 @@
-# my-spotifyweb-dupe
+# Claire's Spotify Web
 fed assignment 1
