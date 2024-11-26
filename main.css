@@ -1,8 +1,10 @@
+* {
+    box-sizing: border-box;
+} 
+
 body{
     background-color: black;
     font-family: "Inter", sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 /* top header control section*/
@@ -12,9 +14,11 @@ body{
     display: flex; /*so that i can do the three part alignment*/
     justify-content: space-between; 
     align-items: center; /*make the row of logos vertically centralised */
-    width: 100%;
-    padding: 10px 20px;
-    z-index: 1000;
+    object-fit: contain;;
+    width: calc(100vw - 10px);
+    padding: 10px 10px;
+    z-index: 5;
+    background-color: black;
 }
 
 .spotify-logo{
@@ -23,20 +27,20 @@ body{
 }
 
 .home-search{
-    gap:10px;
+    display: flex ;
     align-items: center;
-    display: flex;
+    gap:10px;
 }
 
 .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 45px;
     height: 45px;
     border-radius: 50%; /*make it a circle*/
-    background-color: rgb(65, 65, 65);
-    display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(65, 65, 65);
 }
 
 .home-img{
@@ -51,12 +55,13 @@ body{
 
 .search-box{
     width: 100%;
-    max-width: 480px;
+    max-width: 520px;
     height: 45px;
     border-radius: 25px;
     background-color: rgb(65, 65, 65);
     font-family: "Inter", sans-serif;
-    color: whitesmoke;
+    font-size: 15px;
+    color: rgb(154, 154, 154);
     display: flex;
     align-items: center;
     position: relative;
@@ -72,16 +77,21 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    object-fit: contain;
 }
 
-.playlist-panel{
-    position:fixed;
+.homescreen-bottom{
+    position: fixed;
     top: 70px;
-    left: 17px;
-    width: 70px;
+    display: flex;
+    gap: 10px;
+    width: 100vw;
     height: calc(100vh - 70px);
-    border-radius: 5px;
+    object-fit: contain;
+}
+.playlist-panel{
+    width: 65px;
+    height: calc(100vh - 70px);
+    border-radius: 8px;
     background-color:rgb(65, 65, 65) ;
     display: flex;
     justify-items: center;
@@ -90,15 +100,15 @@ body{
 
 .lib-icon{
     position: absolute;
+    margin: auto;
+    border-radius: 8px;
 }
 
 .middle-panel{
-    position:fixed;
-    top: 70px;
-    left: 104px;
-    width: calc(100vw - 121px);
     height: calc(100vh - 70px);
-    border-radius: 5px;
+    width: 100%;
+    max-width: calc(100vw - 90px);
+    border-radius: 8px;
     background-color:rgb(65, 65, 65) ;
     display: flex;
     justify-items: center;
