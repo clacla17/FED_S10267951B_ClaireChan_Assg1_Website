@@ -1,25 +1,71 @@
 body{
     background-color: black;
+    font-family: "Inter", sans-serif;
 }
 
+/* top header control section*/
 .heading{
-    position:fixed
+    position:fixed;
+    display: flex; /*so that i can do the three part alignment*/
+    justify-content: space-between; 
+    align-items: center; /*make the row of logos vertically centralised */
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 .spotify-logo{
-    text-align: left;
+    height: 40px;
     max-width: 100%;
-    height: auto;
-}
-heading.home-search.home.circle{
-    max-width: 20px;
-    max-height: 20px;
-    background-color: rgb(59, 58, 58);
-    z-index: 0;
 }
 
-heading.home-search.home.home-img{
-    max-width: 20px;
-    max-height: auto;
-    z-index: 1;
+.home-search{
+    gap:10px;
+    align-items: center;
+    display: flex;
+}
+
+.circle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /*make it a circle*/
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img{
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute; /*linked to circle*/
+    object-fit: contain;
+}
+
+.search-box{
+    width: 100%;
+    max-width: 480px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 5px;
+    font-family: "Inter", sans-serif;
+    color: whitesmoke;
+}
+.search-img{
+    width: 40px;
+    height: 40px;
+}
+
+.user-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
