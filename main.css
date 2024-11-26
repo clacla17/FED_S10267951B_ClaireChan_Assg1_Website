@@ -1,3 +1,25 @@
 body{
     background-color: black;
 }
+
+.heading{
+    position:fixed
+}
+
+.spotify-logo{
+    text-align: left;
+    max-width: 100%;
+    height: auto;
+}
+heading.home-search.home.circle{
+    max-width: 20px;
+    max-height: 20px;
+    background-color: rgb(59, 58, 58);
+    z-index: 10;
+}
+
+heading.home-search.home.home-img{
+    max-width: 15px;
+    max-height: auto;
+    z-index: 15;
+}
