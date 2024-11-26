@@ -1,11 +1,14 @@
 body{
     background-color: black;
     font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /* top header control section*/
 .heading{
     position:fixed;
+    top:0;
     display: flex; /*so that i can do the three part alignment*/
     justify-content: space-between; 
     align-items: center; /*make the row of logos vertically centralised */
@@ -30,8 +33,8 @@ body{
     height: 45px;
     border-radius: 50%; /*make it a circle*/
     background-color: rgb(65, 65, 65);
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
@@ -52,12 +55,13 @@ body{
     height: 45px;
     border-radius: 25px;
     background-color: rgb(65, 65, 65);
+    font-family: "Inter", sans-serif;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     position: relative;
     padding: 5px 5px;
-    font-family: "Inter", sans-serif;
-    color: whitesmoke;
+    
 }
 .search-img{
     width: 40px;
@@ -68,4 +72,35 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    object-fit: contain;
+}
+
+.playlist-panel{
+    position:fixed;
+    top: 70px;
+    left: 17px;
+    width: 70px;
+    height: calc(100vh - 70px);
+    border-radius: 5px;
+    background-color:rgb(65, 65, 65) ;
+    display: flex;
+    justify-items: center;
+    
+}
+
+.lib-icon{
+    position: absolute;
+}
+
+.middle-panel{
+    position:fixed;
+    top: 70px;
+    left: 104px;
+    width: calc(100vw - 121px);
+    height: calc(100vh - 70px);
+    border-radius: 5px;
+    background-color:rgb(65, 65, 65) ;
+    display: flex;
+    justify-items: center;
+    
 }
