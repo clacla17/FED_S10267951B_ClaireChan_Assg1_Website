@@ -79,6 +79,7 @@ body{
     border-radius: 50%;
 }
 
+/*bottom panels for playlists and albums*/
 .homescreen-bottom{
     position: fixed;
     top: 70px;
@@ -88,19 +89,20 @@ body{
     height: calc(100vh - 70px);
     object-fit: contain;
 }
+
 .playlist-panel{
+    display: flex;
+    justify-content: center;
     width: 65px;
     height: calc(100vh - 70px);
     border-radius: 8px;
     background-color:rgb(65, 65, 65) ;
-    display: flex;
-    justify-items: center;
-    
 }
-
 .lib-icon{
     position: absolute;
-    margin: auto;
+    text-align: center;
+    width: 35px;
+    height: 35px;
     border-radius: 8px;
 }
 
@@ -112,5 +114,4 @@ body{
     background-color:rgb(65, 65, 65) ;
     display: flex;
     justify-items: center;
-    
 }
