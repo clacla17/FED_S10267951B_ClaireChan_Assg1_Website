@@ -40,7 +40,7 @@ body{
     height: 45px;
     border-radius: 50%; /*make it a circle*/
     position: relative;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(44, 43, 43);
 }
 
 .home-img{
@@ -58,7 +58,7 @@ body{
     max-width: 520px;
     height: 45px;
     border-radius: 25px;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(44, 43, 43);
     font-family: "Inter", sans-serif;
     font-size: 15px;
     color: rgb(154, 154, 154);
@@ -92,18 +92,70 @@ body{
 
 .playlist-panel{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 65px;
     height: calc(100vh - 70px);
     border-radius: 8px;
-    background-color:rgb(65, 65, 65) ;
+    background-color:rgb(44, 43, 43) ;
+    gap: 10px;
 }
 .lib-icon{
-    position: absolute;
+    margin-top: 10px;
     text-align: center;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 8px;
+}
+
+.side-playlists{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 250px;
+    height: calc(100vh - 120px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* liked playlist button*/
+.toplaylist-button{
+    left: 5px;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    position:relative;
+}
+.toplaylist-button:hover{
+    transform: scale(1.05);
+}
+.bttn-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+}
+#likedsong-popup{
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 65px;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(66, 65, 65);
+    z-index: 10;
+    padding-left: 5px;
+    text-align: left;
+}
+.toplaylist-button:hover #likedsong-popup{
+    display: block;
 }
 
 .middle-panel{
@@ -111,7 +163,9 @@ body{
     width: 100%;
     max-width: calc(100vw - 90px);
     border-radius: 8px;
-    background-color:rgb(65, 65, 65) ;
+    background-color:rgb(44, 43, 43) ;
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
+
+
