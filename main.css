@@ -16,12 +16,13 @@ body{
     align-items: center; /*make the row of logos vertically centralised */
     object-fit: contain;
     width: calc(100vw - 10px);
+    height:fit-content;
     padding: 10px 10px;
     z-index: 5;
     background-color: black;
 }
 
-.spotify-logo{
+#spotify-logo{
     height: 40px;
     max-width: 100%;
     cursor:pointer;
@@ -32,12 +33,12 @@ body{
     gap:10px;
 }
 
-.home{
+#homebttn{
     cursor:pointer;
     border:none;
     background:none;
 }
-.home:hover{
+#homebttn:hover{
     transform: scale(1.05)
 }
 
@@ -62,24 +63,34 @@ body{
     object-fit: contain;
 }
 
-.search-box{
-    width: 100%;
-    max-width: 520px;
+.search{
+    display: flex;
+    align-items: center;
+    width: max-content;
     height: 45px;
     border-radius: 25px;
-    background-color: rgb(44, 43, 43);
+    background: rgb(44, 43, 43);
+    padding: 5px 5px;
+    transition: background 0.4s;
+}
+.search:focus-within{
+    background: rgb(70, 68, 68);
+}
+.search:hover{
+    background: rgb(70, 68, 68);
+}
+.search-box{
     font-family: "Inter", sans-serif;
     font-size: 15px;
     color: rgb(154, 154, 154);
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 5px 5px;
-    
+    outline:none;
+    border:none;
+    background:transparent;
 }
 .search-img{
     width: 40px;
     height: 40px;
+    cursor:pointer;
 }
 
 .user-img{

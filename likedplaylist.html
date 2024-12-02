@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liked playlist</title>
     <link rel="stylesheet" href="main.css" type="text/css">
-    <link rel="stylesheet" href="playlist.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--top navigation bar-->
     <div class = "heading">
 
-        <img src = "spotifylogo.png" class="spotify-logo">
-
+        <img src = "images/spotifylogo.png" id="spotify-logo">
         <div class = "home-search">
-            <div class="home">
+            <button type="button" id="homebttn">
                 <div class="circle"> 
-                    <img src = "homelogo.png" class="home-img">
-                </div>  
-            </div>
-            <div class = "search">
-                <div class="search-box">
-                    <div class="search-icon">
-                        <img src = "searchlogo.png" class="search-img">
-                    </div>
-                    <div>What do you want to play?</div>
+                    <img src = "images/homelogo.png" class="home-img">
+                </div>
+            </button>
+            <div class = "searchbttn">
+                <div class="search">
+                    <img src = "images/searchlogo.png" class="search-img">
+                    <input class="search-box" type="search" placeholder="What do you want to play?">
                 </div>
             </div>
         </div>
         <!--user pfp-->
-        <img src="userpfp.jpeg" class="user-img">
+        <img src="images/userpfp.jpeg" class="user-img">
     </div>
-    <script src ="main.js"></script>
+    
+    <script src ="likedplaylist.js"></script>
 </body>
 </html>

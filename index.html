@@ -14,19 +14,17 @@
     <!--top navigation bar-->
     <div class = "heading">
 
-        <img src = "images/spotifylogo.png" class="spotify-logo">
+        <img src = "images/spotifylogo.png" id="spotify-logo">
         <div class = "home-search">
-            <button class="home">
+            <button type="button" id="homebttn">
                 <div class="circle"> 
                     <img src = "images/homelogo.png" class="home-img">
                 </div>
             </button>
-            <div class = "search">
-                <div class="search-box">
-                    <div class="search-icon">
-                        <img src = "images/searchlogo.png" class="search-img">
-                    </div>
-                    <div>What do you want to play?</div>
+            <div class = "searchbttn">
+                <div class="search">
+                    <img src = "images/searchlogo.png" class="search-img">
+                    <input class="search-box" type="search" placeholder="What do you want to play?">
                 </div>
             </div>
         </div>
@@ -36,6 +34,7 @@
     
     <!--bottom homescreen-->
     <div class="homescreen-bottom">
+        <!--side panel portion-->
         <div class="playlist-panel">
             <img src="images/spotifylib.png" class="lib-icon">
             <div class = "side-playlists">
@@ -114,8 +113,48 @@
                 
             </div>
         </div>
-        <div class="middle-panel">
 
+        <!--middle panel-->
+        <div class="middle-panel">
+            <div class="middle-frame">
+                <div class="middle-playlists">
+                    <!--grp of 8-->
+                    <div class="grp-of-playlists">
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                        <div class="longalbums"></div>
+                    </div>
+
+                    <!--made for user panel-->
+                    <div class="madeforuserpanel">
+                        <h1>Made For eclair</h1>
+                        <div class="madeforuser" id="MFUplaylists">
+                            <div class="midplaylist"></div>
+                            <div class="midplaylist"></div>
+                            <div class="midplaylist"></div>
+                            <div class="midplaylist"></div>
+                        </div>
+                    </div>
+
+                    <!--recently played panel-->
+                    <div class="recentlyplayedpanel">
+                        <h1>Recently played</h1>
+                        <div class="recentlyplayed" id="RPalbums">
+                            <div class="midplaylist"></div>
+                            <div class="midplaylist"></div>
+                            <div class="midplaylist"></div>
+                            <div class="midplaylist"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>

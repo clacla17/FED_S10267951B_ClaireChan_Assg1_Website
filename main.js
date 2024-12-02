@@ -3,3 +3,4 @@
 document.getElementById("likesongbttn").onclick = function() {
     window.location.href = "likedplaylist.html";
 };
+
