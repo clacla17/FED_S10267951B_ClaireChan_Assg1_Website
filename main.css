@@ -210,6 +210,39 @@ body{
     background-color:rgb(44, 43, 43) ;
     display: flex;
     justify-content: center;
+    padding: 15px; 
 }
 
+.middle-frame{
+    position:fixed;
+    width: 100%;
+    height: calc(100vh - 70px);
+    overflow:hidden;
+    overflow-y: scroll;
+    
+}
+.middle-frame::-webkit-scrollabar{
+    display: none
+}
+.grp-of-playlists{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    width: calc(100vw - 115px);
+    height: max-content;
+    gap:8px;
+}
 
+.longalbums{
+    height: 55px;
+    width: calc((100vw - 123px)/2);
+    background:rgb(67, 66, 66);
+    border-radius: 8px;
+    box-shadow: 5px ;
+    border:none;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.longalbums:hover{
+    background: rgb(124, 121, 121)
+}
