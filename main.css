@@ -216,12 +216,13 @@ body{
 .middle-frame{
     position:fixed;
     width: 100%;
+    max-width: calc(100vw - 120px);
     height: calc(100vh - 70px);
     overflow:hidden;
     overflow-y: scroll;
-    
+    justify-content: center;
 }
-.middle-frame::-webkit-scrollabar{
+.middle-frame::-webkit-scrollbar{
     display: none
 }
 .grp-of-playlists{
