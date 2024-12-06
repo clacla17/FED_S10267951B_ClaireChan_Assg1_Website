@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claire's Spotify Web</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,7 +141,7 @@
                             <b>AM</b>   
                         </button>
 
-                        <button type="button" class="longalbums">
+                        <button type="button" class="longalbums" id="likesongbttn">
                             <img src="images/liked songs.jpg" class="longalbumIMG">
                             <b>Liked Songs</b>   
                         </button>
@@ -165,36 +166,41 @@
                     <!--made for user section-->
                     <section class="madeforusersection">
                         <h2>Made For eclair</h2>
-                        <div id="MFYframe">
+                        <div class="sectionframe">
                             <div class="madeforuser">
-                                <button type="button" class="MFYplaylist">
-                                    <img src="images/dm1.png" class="MFYimg">
-                                    <p>LE SSERAFIM, New Jeans, aespa and more</p>
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm1.png" class="SECimg">
+                                    <b>LE SSERAFIM, New Jeans, aespa and more</b>
                                 </button>
     
-                                <button type="button" class="MFYplaylist">
-                                    <img src="images/dm2.png" class="MFYimg">
-                                    <p>TOMORROW X TOGETHER, NCT DREAM and more</p>
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm2.png" class="SECimg">
+                                    <b>TOMORROW X TOGETHER, NCT DREAM and more</b>
                                 </button>
     
-                                <button type="button" class="MFYplaylist">
-                                    <img src="images/dm3.png" class="MFYimg">
-                                    <p>JEON SOMI, TAEYEON, BOL4 and more</p>
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm3.png" class="SECimg">
+                                    <b>JEON SOMI, TAEYEON, BOL4 and more</b>
                                 </button>
                                 
-                                <buttom type="button" class="MFYplaylist">
-                                    <img src="images/dm4.png" class="MFYimg">
-                                    <p>Fiji Blue, Benson Boone, Wallows and more</p>
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm4.png" class="SECimg">
+                                    <b>Fiji Blue, Benson Boone, Wallows and more</b>
                                 </button>
                                 
-                                <buttom type="button" class="MFYplaylist">
-                                    <img src="images/dm5.png" class="MFYimg">
-                                    <p>The Weekend, Gracie Abrams, FRENSHIP and more</p>
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm5.png" class="SECimg">
+                                    <b>The Weekend, Gracie Abrams, FRENSHIP and more</b>
                                 </button>
                                 
-                                <buttom type="button" class="MFYplaylist">
-                                    <img src="images/dm6.png" class="MFYimg">
-                                    <p>Chappel Roan, Strawberry Guy, girl in red and more</p>
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm6.png" class="SECimg">
+                                    <b>Chappel Roan, Strawberry Guy, girl in red and more</b>
+                                </button>
+
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dj.png" class="SECimg">
+                                    <b>DJ</b>
                                 </button>
                             </div>
                         </div>
@@ -203,15 +209,113 @@
                     <!--recently played panel-->
                     <section class="recentlyplayedsection">
                         <h2>Recently played</h2>
-                    
-                        <div class="recentlyplayed" id="RPalbums">
-                            <div class="midplaylist"></div>
-                            <div class="midplaylist"></div>
-                            <div class="midplaylist"></div>
-                            <div class="midplaylist"></div>
+                        <div class="sectionframe">
+                            <div class="recentlyplayed">
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/SB album.png" class="SECimg">
+                                    <b>emails i can't send</b>
+                                </button>
+    
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/This_City_by_Sam_Fischer.png" class="SECimg">
+                                    <b>This City</b>
+                                </button>
+    
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/AG eternal sunshine.jpg" class="SECimg">
+                                    <b>eternal sunshine</b>
+                                </button>
+                                
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/dm1.png" class="SECimg">
+                                    <b>Daily Mix 1</b>
+                                </button>
+                                
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/keshi say.png" class="SECimg">
+                                    <b>Say</b>
+                                </button>
+                                
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix4.png" class="SECimg">
+                                    <b>Moody Mix</b>
+                                </button>
+
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/AESPA album.jpg" class="SECimg">
+                                    <b>Armageddon</b>
+                                </button>
+                            </div>
                         </div>
                     </section>
 
+                    <!--uniquely yours panel-->
+                    <section class="unqiuelyyourssection">
+                        <h2>Uniquely yours</h2>
+                        <div class="sectionframe">
+                            <div class="uniquelyyours">
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/daylist.png" class="SECimg">
+                                    <b>Your day in a playlist.</b>
+                                </button>
+    
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/on repeat.png" class="SECimg">
+                                    <b>Songs you love right now.</b>
+                                </button>
+    
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/time c.png" class="SECimg">
+                                    <b>We made you a personalised playlist with songs to take you back in time.</b>
+                                </button>
+                                
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/repeat r.png" class="SECimg">
+                                    <b>Your past favourites.</b>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--your top mixes panel-->
+                    <section class="topmixessection">
+                        <h2>Your top mixes</h2>
+                        <div class="sectionframe">
+                            <div class="topmixes">
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix1.png" class="SECimg">
+                                    <b>Ariana Grande, Sabrina Carpenter and Taylor Swift</b>
+                                </button>
+    
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix2.png" class="SECimg">
+                                    <b>SZA, Billie Eilish and Gracie Abrams</b>
+                                </button>
+    
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix3.png" class="SECimg">
+                                    <b>Tood, Shae, Kendrick Lamar and more</b>
+                                </button>
+                                
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix4.png" class="SECimg">
+                                    <b>The 1975, Olivia Rodrigo, Taylor Swift and more</b>
+                                </button>
+
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix5.png" class="SECimg">
+                                    <b>Bruno Mars, Lauv, Sabrina Carpenter and more</b>
+                                </button>
+
+                                <button type="button" class="SECTIONplaylist">
+                                    <img src="images/mix6.png" class="SECimg">
+                                    <b>Clairo, Bruno Mars, Dhruv and more</b>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

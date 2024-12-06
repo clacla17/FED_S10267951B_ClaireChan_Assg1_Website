@@ -4,115 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claire's Spotify Web</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
     <link rel="stylesheet" href="playlist.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--top navigation bar-->
+<div class = "heading">
 
-    <!--top navigation bar-->
-    <div class = "heading">
-
-        <img src = "images/spotifylogo.png" id="spotify-logo">
-        <div class = "home-search">
-            <button type="button" id="homebttn">
-                <div class="circle"> 
-                    <img src = "images/homelogo.png" class="home-img">
-                </div>
-            </button>
-            <div class = "searchbttn">
-                <div class="search">
-                    <img src = "images/searchlogo.png" class="search-img">
-                    <input class="search-box" type="search" placeholder="What do you want to play?">
-                </div>
+    <img src = "images/spotifylogo.png" id="spotify-logo">
+    <div class = "home-search">
+        <button type="button" id="homebttn">
+            <div class="circle"> 
+                <img src = "images/homelogo.png" class="home-img">
+            </div>
+        </button>
+        <div class = "searchbttn">
+            <div class="search">
+                <img src = "images/searchlogo.png" class="search-img">
+                <input class="search-box" type="search" placeholder="What do you want to play?">
             </div>
         </div>
-        <!--user pfp-->
-        <img src="images/userpfp.jpeg" class="user-img">
     </div>
-    
-    <!--bottom homescreen-->
-    <div class="homescreen-bottom">
-        <!--side panel portion-->
-        <div class="playlist-panel">
-            <img src="images/spotifylib.png" class="lib-icon">
-            <div class = "side-playlists">
-                <div class="the-playlists">
-                    <!--put all the playlist images here-->
-                    <button type="button" class="toplaylist-button" id="likesongbttn">
-                        <img src="images/liked songs.jpg" class="bttn-img">
-                        <div class="album-popup">
-                            <p><b>Liked Songs</b><br/>Playlist . 18 songs</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="ESalbumbttn">
-                        <img src="images/AG eternal sunshine.jpg" class="bttn-img">
-                        <div class="album-popup">
-                            <p><b>Eternal sunshine</b><br/>Album . Ariana Grande</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="AMalbumbttn">
-                        <img src="images/AM album.jpg" class="bttn-img">
-                        <div class="album-popup">
-                            <p><b>AM</b><br/>Album . Arctic Monkeys</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="SOURalbumbttn">
-                        <img src="images/SOUR album.png" class="bttn-img">
-                        <div class="album-popup">
-                            <p><b>SOUR</b><br/>Album . Olivia Rodrigo</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="TTalbumbttn">
-                        <img src="images/take time.jpeg" class="bttn-img" id = "TTalbum">
-                        <div class="album-popup">
-                            <p><b>Take Time</b><br/>Album . Giveon</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="LAUValbumbttn">
-                        <img src="images/LAUV album.png" class="bttn-img" id = "LAUValbum">
-                        <div class="album-popup">
-                            <p><b>I Met You When I was 18</b><br/>Album . Lauv</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="AESPAalbumbttn">
-                        <img src="images/AESPA album.jpg" class="bttn-img" id = "AESPAalbum">
-                        <div class="album-popup">
-                            <p><b>Armageddon</b><br/>Album . aespa</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="SBalbumbttn">
-                        <img src="images/SB album.png" class="bttn-img" id = "SBalbum">
-                        <div class="album-popup">
-                            <p><b>Emails I Can't Send</b><br/>Album . Sabrina Carpenter</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="SZAalbumbttn">
-                        <img src="images/sza ctrl.jpg" class="bttn-img" id = "SZAalbum">
-                        <div class="album-popup">
-                            <p><b>CTRL</b><br/>Album . SZA</p>
-                        </div>
-                    </button>
-    
-                    <button type="button" class="toplaylist-button" id="ILLITalbumbttn">
-                        <img src="images/illit super real me.png" class="bttn-img" id = "ILLITalbum">
-                        <div class="album-popup">
-                            <p><b>Super Real Me</b><br/>Album . ILLIT</p>
-                        </div>
-                    </button>
-                </div>
-                
+    <!--user pfp-->
+    <img src="images/userpfp.jpeg" class="user-img">
+</div>
+
+<!--bottom homescreen-->
+<div class="homescreen-bottom">
+    <!--side panel portion-->
+    <div class="playlist-panel">
+        <img src="images/spotifylib.png" class="lib-icon">
+        <div class = "side-playlists">
+            <div class="the-playlists">
+                <!--put all the playlist images here-->
+                <button type="button" class="toplaylist-button" id="likesongbttn">
+                    <img src="images/liked songs.jpg" class="bttn-img">
+                    <div class="album-popup">
+                        <p><b>Liked Songs</b><br/>Playlist . 18 songs</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="ESalbumbttn">
+                    <img src="images/AG eternal sunshine.jpg" class="bttn-img">
+                    <div class="album-popup">
+                        <p><b>Eternal sunshine</b><br/>Album . Ariana Grande</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="AMalbumbttn">
+                    <img src="images/AM album.jpg" class="bttn-img">
+                    <div class="album-popup">
+                        <p><b>AM</b><br/>Album . Arctic Monkeys</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="SOURalbumbttn">
+                    <img src="images/SOUR album.png" class="bttn-img">
+                    <div class="album-popup">
+                        <p><b>SOUR</b><br/>Album . Olivia Rodrigo</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="TTalbumbttn">
+                    <img src="images/take time.jpeg" class="bttn-img" id = "TTalbum">
+                    <div class="album-popup">
+                        <p><b>Take Time</b><br/>Album . Giveon</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="LAUValbumbttn">
+                    <img src="images/LAUV album.png" class="bttn-img" id = "LAUValbum">
+                    <div class="album-popup">
+                        <p><b>I Met You When I was 18</b><br/>Album . Lauv</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="AESPAalbumbttn">
+                    <img src="images/AESPA album.jpg" class="bttn-img" id = "AESPAalbum">
+                    <div class="album-popup">
+                        <p><b>Armageddon</b><br/>Album . aespa</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="SBalbumbttn">
+                    <img src="images/SB album.png" class="bttn-img" id = "SBalbum">
+                    <div class="album-popup">
+                        <p><b>Emails I Can't Send</b><br/>Album . Sabrina Carpenter</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="SZAalbumbttn">
+                    <img src="images/sza ctrl.jpg" class="bttn-img" id = "SZAalbum">
+                    <div class="album-popup">
+                        <p><b>CTRL</b><br/>Album . SZA</p>
+                    </div>
+                </button>
+
+                <button type="button" class="toplaylist-button" id="ILLITalbumbttn">
+                    <img src="images/illit super real me.png" class="bttn-img" id = "ILLITalbum">
+                    <div class="album-popup">
+                        <p><b>Super Real Me</b><br/>Album . ILLIT</p>
+                    </div>
+                </button>
             </div>
+            
         </div>
+    </div>
 
         <!--middle panel-->
         <div class="middle-panel">

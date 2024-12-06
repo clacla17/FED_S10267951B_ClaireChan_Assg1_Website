@@ -1,3 +1,4 @@
-document.getElementById("homebttn").onclick = function() {
+document.getElementById("homebttn").onclick = 
+function() {
     window.location.href = "index.html";
 };
