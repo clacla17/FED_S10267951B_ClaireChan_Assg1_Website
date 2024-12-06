@@ -101,12 +101,12 @@ body{
 
 /*bottom panels for playlists and albums*/
 .homescreen-bottom{
-    position: fixed;
-    top: 70px;
     display: flex;
+    position: fixed;
+    margin-top: 70px;
     gap: 10px;
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
     object-fit: contain;
 }
 
@@ -205,6 +205,8 @@ body{
     transition-duration: 0.3s;
 }
 
+
+/* the middle panel*/
 .middle-panel{
     height: calc(100vh - 70px);
     width: 100%;
@@ -218,7 +220,6 @@ body{
 
 .middle-frame{
     position:fixed;
-    width: 100%;
     max-width: calc(100vw - 120px);
     height: calc(100vh - 70px);
     overflow:hidden;
@@ -233,42 +234,75 @@ body{
     z-index: 1;
 }
 
+/* the group of 8 playlists*/
 .grp-of-playlists{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    width: calc(100vw - 120px);
     height: max-content;
     gap:8px;
 }
 
 .longalbums{
-    position:relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     height: 55px;
     width: calc((100vw - 128px)/2);
     background:rgba(67, 66, 66, 0.4);
     border-radius: 8px;
     border:none;
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     transition: background 0.5s;
     cursor: pointer;
+    padding: 0px;
 }
 .longalbums:hover{
     background: rgb(124, 121, 121)
 }
 .longalbumIMG{
-    position: absolute;
     height:55px;
     width: 55px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    left: 0px;
-    top:0px;
-}
-b{
-    position: absolute;
-    left: 75px;
-    transform: translate(-50%, -50%);
 }
 
+/* made for user section*/
+
+#MFYframe{
+    max-width: calc(100vw - 120px);
+    height: 180px;
+    overflow:hidden;
+    overflow-x: scroll;
+}
+#MFYframe::-webkit-scrollbar{
+    display:none;
+}
+
+.madeforuser{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.MFYplaylist{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 180px;
+    border: none;
+    border-radius: 8px;
+    background:rgb(44,43,43);
+    color:rgb(182, 181, 181);
+    cursor: pointer;
+}
+.MFYimg{
+    height: 110px;
+    border-radius: 8px;
+}
+
+.MFYplaylist:hover{
+    background: rgba(67, 66, 66, 0.4)
+}
