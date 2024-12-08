@@ -1,3 +1,4 @@
+/*side panel*/
 .playlist-panel{
     display: flex;
     flex-direction: column;
@@ -94,6 +95,7 @@
 }
 
 
+
 /* the middle panel*/
 .middle-panel{
     height: calc(100vh - 70px);
@@ -109,7 +111,7 @@
 .middle-frame{
     position:fixed;
     max-width: calc(100vw - 120px);
-    height: calc(100vh - 90px);
+    height: calc(100vh - 85px);
     overflow:hidden;
     overflow-y: scroll;
 }
@@ -118,97 +120,44 @@
 }
 
 
-.middle-playlists{
+.middlesection{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     z-index: 1;
+    color: white;
 }
 
-/* the group of 8 playlists*/
-.grp-of-playlists{
+/* the group of boxes*/
+.grp-of-boxes{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     height: max-content;
-    gap:8px;
+    gap:20px;
 }
 
-.longalbums{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    height: 55px;
-    width: calc((100vw - 128px)/2);
-    background:rgba(67, 66, 66, 0.4);
+.browsebox{
+    width: 20vw;
+    min-width: 110px;
+    height: auto;
     border-radius: 8px;
     border:none;
-    color: white;
-    font-size: 15px;
-    transition: background 0.5s;
     cursor: pointer;
     padding: 0px;
-    text-align: left;
-}
-.longalbums:hover{
-    background: rgb(124, 121, 121)
-}
-.longalbumIMG{
-    height:55px;
-    width: 55px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
+} 
 
-/* all of the section*/
-h2{
-    color: white;
-}
-
-.sectionframe{
-    max-width: calc(100vw - 120px);
-    height: 250px;
-    overflow:hidden;
-    overflow-x: scroll;
-}
-.sectionframe::-webkit-scrollbar{
-    display:none;
-}
-
-.madeforuser,
-.recentlyplayed,
-.uniquelyyours,
-.topmixes {
-    display:flex;
-    flex-direction: row;
-    height: 250px;
-    width: max-content;
-}
-
-.SECTIONplaylist{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 210px;
-    height: 250px;
-    border: none;
-    border-radius: 8px;
-    background:rgb(44,43,43);
-    color:rgb(182, 181, 181);
-    cursor: pointer;
-    gap: 10px;
-}
-.SECimg{
-    width: 200px;
-    height: 200px;
+.browseIMG{
+    height:100%;
+    width: 100%;
     border-radius: 8px;
 }
-
-.SECTIONplaylist:hover{
-    background: rgba(67, 66, 66, 0.4)
+.browsebox:hover{
+    transform: scale(1.1);
 }
 
-
-/*responsiveness*/
-@media (max-width: 480px){
+@media (max-width:480px){
     .side-playlists{
         width: 60px
     }
@@ -223,27 +172,7 @@ h2{
     .toplaylist-button:hover{
         transform: scale(1.05);
     }
-    .grp-of-playlists{
-        gap:5px;
-    }  
-    .longalbums{
-        font-size:12px;
-        gap: 5px
-    }    
-    .longalbums:hover{
-        background: rgb(124, 121, 121)
+    .browsebox:hover{
+        transform: scale(1.1);
     }
-    .sectionframe{
-        height: 200px;
-    }
-    .SECTIONplaylist{
-        width: 160px; 
-        height: 200px;
-        font-size: 12px;
-        gap: 5px;
-    }
-    .SECimg{
-        width: 150px;
-        height:150px;
-    }    
 }

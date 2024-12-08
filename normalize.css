@@ -88,9 +88,14 @@ body{
     border:none;
     background:transparent;
 }
+
 .search-img{
     width: 40px;
     height: 40px;
+}
+#browsebttn{
+    border:none;
+    background:none;
     cursor:pointer;
 }
 
@@ -98,6 +103,10 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    cursor:pointer;
+}
+.user-img:hover{
+    transform: scale(1.05);
 }
 
 /*bottom panels for playlists and albums*/
@@ -110,6 +119,45 @@ body{
     height: calc(100vh - 60px);
     object-fit: contain;
 }
+
+@media (max-width:480px){
+    #spotify-logo{
+        height: 30px;
+        max-width: 100%;
+        cursor:pointer;
+    }
+    .home-search{
+        gap:5px;
+    }
+    .circle{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+    }
+    .home-img{
+        width: 30px;
+        height: 30px;
+    }
+    .search{
+        width: max-content;
+        height: 40px;
+        padding: 3px 3px;
+    }
+    .search:focus-within{
+        background: rgb(70, 68, 68);
+    }
+    .search:hover{
+        background: rgb(70, 68, 68);
+    }
+    .search-box{
+        font-size:12px;
+    }
+    .search-img{
+        width:35px;
+        height: 35px;
+    }
+}
+
 
 
 

@@ -8,12 +8,14 @@
     display: flex;
     justify-content: center;
     padding: 15px; 
+    padding-top:0px;
 }
 
 .middle-frame{
     position:fixed;
     width: calc(100vw - 15px);
-    height: calc(100vh - 85px);
+    height: calc(100vh - 70px);
+    border-radius: 8px;
     overflow:hidden;
     overflow-y: scroll;
 }
@@ -24,6 +26,7 @@
 .playlistdets{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /*the playlist portion*/
@@ -32,10 +35,11 @@
     flex-wrap: wrap;
     align-items: center;
     width:100%;
-    height: calc(100vh/3);
+    height: fit-content;
     gap:15px;
     padding: 10px;
     padding-left: 20px;
+    padding-top: 25px;
 }
 #LSimg{
     width: 190px;
@@ -43,7 +47,11 @@
     border-radius: 8px;
     box-shadow: 1px 1px 0.5px rgb(72, 71, 71);
 }
-
+#dets{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
 #dets b{
     color:white;
 }
@@ -77,14 +85,15 @@
     color: rgb(100, 98, 98);
 }
 
-
+/*the pause play line*/
 #playpause{
     display:flex;
     position: sticky;
+    top: 0px;
     align-items: center;
     width: 100%;
     height: 12vh;
-    background-color: rgba(34, 24, 56, 0.4);
+    background-color: rgb(34, 22, 64);
     padding-left: 10px;
 }
 .playbttn{
@@ -112,17 +121,114 @@
     transform: scale(1.05);
 }
 
+/*song section*/
 #songsection{
+    display:flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rgba(34, 24, 56, 0.4);
+    background-color: rgb(34, 22, 64);
+    padding-left: 10px;
+    padding-right: 10px;
+    object-fit: contain;
     
 }
 
+/*title line*/
 #heading{
     position:sticky;
+    top: 70px;
     display: flex;
     flex-direction: row;
-    color: rgb(100, 98, 98);
+    justify-content: space-between;
+    width:100%;
+    height: 6vh;
+    background-color: rgb(34, 22, 64);
+    color: rgb(142, 140, 140);
     font-size: 15px;
+}
+
+.num{
+    text-align: center;
+    width: 10vw
+}
+.title{
+    text-align: left;
+    width: 45vw;                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+.album{
+    text-align: left;
+    width: 30vw;
+}
+.clock{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    align-content: center;
+    width: 15vw;
+}
+.clock img{
+    width:17px;
+    height:17px;
+}
+
+hr{
+    width:100%;
+    color: rgb(111, 110, 110);
+    background-color: rgb(111, 110, 110);
+    height: 1px;
+    border-width: 0;
+
+}
+
+/*lines of song*/
+.LPsongs{
+    display: flex;
+    flex-direction: row;
+    color: rgb(142, 140, 140);
+    background:none;
+    transition: background 0.5s;
+    border: none;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+    width:100%;
+    border-radius: 8px;
+    height: fit-content;
+    cursor: pointer;
+}
+.LPsongs:hover{
+    background-color: rgba(96, 72, 148, 0.6);
+}
+.song{
+    width: 45vw;
+    text-align:left;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+} 
+.thealbumpic{
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+}
+.LPsongdets{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+}
+.name{
+    margin: 0px;
+    color:white;
+}
+.artist{
+    margin:0px;
+}
+.duration{
+    text-align: left;
+    width: 15vw;
 }
