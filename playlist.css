@@ -232,3 +232,23 @@ hr{
     text-align: left;
     width: 15vw;
 }
+
+@media (max-width:480px){
+    .thealbumpic{
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+    }
+    .LPsongdets{
+        font-size: 12px;
+    }
+    .num,
+    .title,
+    .album{
+        font-size: 12px;
+    }
+    .clock img{
+        width:14px;
+        height:14px;
+    }
+}
